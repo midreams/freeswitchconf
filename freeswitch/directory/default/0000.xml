@@ -1,0 +1,21 @@
+
+
+    <include>
+  <user id="abcde">
+    <params>
+      <param name="password" value="Ad@sn1407"/>
+      <param name="vm-password" value="Ad@sn1407"/>
+    </params>
+    <variables>
+      <variable name="toll_allow" value="domestic,international,local"/>
+      <variable name="accountcode" value="abcde"/>
+      <variable name="user_context" value="default"/>
+      <variable name="effective_caller_id_name" value="m1_mar"/>
+      <variable name="effective_caller_id_number" value="abcde"/>
+      <variable name="outbound_caller_id_name" value="$${outbound_caller_name}"/>
+      <variable name="outbound_caller_id_number" value="$${outbound_caller_id}"/>
+      <variable name="callgroup" value="m1"/>
+    </variables>
+  </user>
+</include>
+

@@ -1,0 +1,21 @@
+
+
+ <include>
+
+  <extension name="Cro_abcdef_outbound">
+    <!--<condition field="${toll_allow}" expression="local"/>-->
+    <condition field="caller_id_number" expression="^abcdef$">
+      <!--<action application="set" data="effective_caller_id_number=60000"/>
+                            <action application="set" data="effective_caller_id_name=jinshihao"/>-->
+      <action application="set" data="effective_caller_id_number=39559499"/>
+      <action application="set" data="effective_caller_id_name=39559499"/>
+      <action application="sleep" data="1000"/>
+      <!--<action application="answer" data=""/>-->
+<action application="bridge" data="sofia/gateway/CroIsp01OutBound/${destination_number}"/>
+
+<!-- <action application="bridge" data="sofia/gateway/CroIsp01OutBound/${destination_number}"/> -->
+<!-- <action application="bridge" data="sofia/gateway/CroIsp01OutBound/${destination_number}"/> -->
+    </condition>
+  </extension>
+
+</include>
